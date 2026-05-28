@@ -1,12 +1,40 @@
 ---
 title: Drive's Claude Wiki
+ai-first: true
+type: index
+date: 2026-05-28
 ---
 
 # Drive's Claude Wiki
 
-Personal operating system for Claude Code — rules, protocols, deployment patterns, and project context for the Worker Bee ecosystem.
+AI-first second brain for Toby Anderton (Drive) — rules, active project context, decisions, patterns, and the Worker Bee build ecosystem. Notes are optimized for future-Claude retrieval.
 
-## Sections
+## Brain (Load First)
+
+| File | Purpose |
+|---|---|
+| [[CRITICAL_FACTS\|Critical Facts]] | Always-loaded constants — API keys, URLs, deploy commands |
+| [[brain/North Star\|North Star]] | Mission, three pillars, active priorities |
+| [[brain/Key Decisions\|Key Decisions]] | ADRs — architecture decisions that must not reverse |
+| [[brain/Patterns\|Patterns]] | Recurring solutions — check before solving new problems |
+| [[brain/how-to-build-droids\|How to Build Droids]] | WB pipeline droid format + plugin.json spec |
+
+## Active Projects
+
+| Project | Path | Status |
+|---|---|---|
+| [[work/active/manage-worker-bee\|manage-worker-bee]] | /Users/drive/manage-worker-bee | active |
+| [[work/active/jrs-auto-repair\|jrs-auto-repair]] | /Users/drive/jrs-auto-repair | active |
+| [[work/active/language-threshold\|Language Threshold]] | medicalspanish + constructionspanish + jr linguist | active |
+| [[work/active/wb-pipeline\|WB Pipeline Droids]] | ~/.claude/skills/wb-*/ | active |
+
+## Org
+
+| File | Purpose |
+|---|---|
+| [[org/agent-ecosystem\|Agent Ecosystem]] | TAC + Jr + wba dispatch matrix |
+
+## Rules
 
 ### [[01-rules/autonomous-operations|Rules]]
 Iron Laws and enforcement protocols that govern every Claude session.
