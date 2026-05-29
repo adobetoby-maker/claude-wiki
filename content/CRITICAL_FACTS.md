@@ -26,7 +26,7 @@ date: 2026-05-28
 
 ## Agent Commands
 - `jr "task"` → Hermes Jr (Max OAuth, synchronous, output returned to TAC)
-- `wba "task"` → Worker Bee Agent (Max OAuth, inline)
+- `wba "task"` → Worker Bee Agent (Max OAuth, inline) — daemon: `~/.worker-bee/daemon.py`, runs via `claude -p`
 - `wba -b "task"` → wba background queue
 - `dispatch --bg "task"` → Hermes fire-and-forget
 - `hermes --profile sitemanager -z "task"` → SiteManager (orthobiologic)
