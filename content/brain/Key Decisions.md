@@ -45,3 +45,18 @@ Architectural decisions that must not be reversed without explicit discussion. E
 ## WB Pipeline: Observable Handoffs
 **Decision:** Each pipeline droid produces a file artifact as its output contract (research-brief.json, scores.md, qa-report.md). Next droid reads the file, not a human's word.
 **Rationale:** Auditable pipeline state from filesystem. No guessing whether a phase is complete.
+
+## Community Vault Tools (2026-05-28)
+**Decision:** Adopt obsidian-mind AI-first format + obsidian-second-brain 34-command research toolkit.
+**Tools adopted:**
+- obsidian-mind (breferrari) — vault structure template, tiered SessionStart loading (~2K tokens budget)
+- kepano/obsidian-skills — Agent Skills SKILL.md format, 5 base skills (obsidian-markdown, obsidian-bases, etc.)
+- obsidian-second-brain (eugeniughelbur) — 34 slash commands, research toolkit, self-updating vault, PostCompact hook
+**Installed at:** `~/.claude/skills/obsidian-second-brain/`, commands in `~/.claude/commands/`, vault path in `~/.claude/settings.json`
+**Alternative rejected:** Staying with flat `~/.claude/projects/-Users-drive/memory/` — no community leverage, no visual navigation.
+
+## SRI Exception: gtag.js (2026-05-28)
+**Decision:** Google's `gtag.js` script does NOT get an `integrity` attribute. No SRI hash.
+**Rationale:** Google dynamically updates gtag.js. Any fixed SRI hash breaks the script loading silently. This is a known exception to the general "add integrity to external scripts" rule.
+**Applies to:** All language-threshold sites using GA4 tag `G-RP0TZ1MP7E`, and any site using Google Analytics.
+**Rule:** Security hook (PostToolUse:Write) will flag this — it is a correct exception, not a bug.

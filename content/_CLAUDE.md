@@ -70,6 +70,23 @@ status: active|complete|archived     # for projects
 - Build artifacts or generated code
 - Ephemeral session notes (those go in ~/.remember/now.md)
 
+## obsidian-second-brain (installed 2026-05-28)
+34 slash commands available. Key research commands:
+- `/research` — multi-source web research
+- `/research-deep` — deep research harness
+- `/x-read` — read a URL and ingest to vault
+- `/x-pulse` — Twitter/X pulse check
+- `/notebooklm` — NotebookLM workflow
+- `/youtube` — ingest YouTube transcript
+- `/podcast` — podcast research
+- Run `/obsidian-init` first session after install to verify vault
+
+Install path: `~/.claude/skills/obsidian-second-brain/`
+Vault path configured in: `~/.claude/settings.json`
+Hooks: PostCompact (this file runs on compaction) + SessionStart
+
 ## Sync
 Vault is Quartz-publishable. `git push` from `/Users/drive/claude-wiki/` triggers rebuild.
 Memory also synced to: `https://github.com/adobetoby-maker/toby-claude-memory`
+
+**Git push status (as of 2026-05-28):** BLOCKED — remote points to upstream `jackyzha0/quartz.git`. Commit `17a1671` (709 insertions) is local only. User must create fork or add own remote before pushing.

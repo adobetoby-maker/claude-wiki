@@ -9,6 +9,9 @@ date: 2026-05-28
 
 AI-first second brain for Toby Anderton (Drive) — rules, active project context, decisions, patterns, and the Worker Bee build ecosystem. Notes are optimized for future-Claude retrieval.
 
+## Quick Links
+- [[log|Operation Log]] — what changed and when
+
 ## Brain (Load First)
 
 | File | Purpose |

@@ -82,3 +82,15 @@ lib/supabase/client.ts  — browser only, no service role
 lib/supabase/admin.ts   — service role, server-side ONLY, never exported to client
 ```
 Mixing these causes silent 401s in production. See [[01-rules/autonomous-operations]].
+
+## SRI Exception: Google Analytics (gtag.js)
+Google's `gtag.js` cannot use SRI (Subresource Integrity). Google dynamically updates the file — any hash breaks it.
+```html
+<!-- CORRECT — no integrity attribute -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+
+<!-- WRONG — will break when Google updates the file -->
+<script async src="..." integrity="sha384-..."></script>
+```
+The security hook (PostToolUse:Write) will flag the missing integrity attribute. Dismiss — this is the correct exception.
+Applies to: all sites using GA4. See [[brain/Key Decisions]] — SRI Exception entry.

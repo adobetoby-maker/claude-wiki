@@ -39,9 +39,10 @@ TAC → Hermes Jr → wba — three coordinated agents:
 - SiteManager: orthobiologic site + LBS Pro orders
 
 ## Active Priorities (as of 2026-05-28)
-1. DNS cutover: [[work/active/medicalspanish]] + [[work/active/constructionspanish]] → Vercel A record (76.76.21.21)
-2. WB pipeline droids — all 7 written, plugin.json wired, ready to activate
-3. Obsidian vault migration — this session
+1. DNS cutover: medicalspanish.app + constructionspanish.app → Cloudflare A record `@` → `76.76.21.21`, grey cloud (user must act)
+2. Fix claude-wiki git remote — commit `17a1671` local only; push blocked to upstream; see [[log]]
+3. WB pipeline droids — all 7 written, plugin.json wired ✓; run `/obsidian-init` to verify vault
+4. Vault migration — DONE (14 files, 709 insertions, commit `17a1671`); obsidian-second-brain installed (34 commands)
 
 ## What Success Looks Like
 - 30+ client sites running through WB pipeline with consistent quality
