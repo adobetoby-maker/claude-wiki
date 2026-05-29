@@ -44,6 +44,11 @@ Client site — Pablo Zaldavar's auto shop in Twin Falls, ID. Full-stack Next.js
   - `lib/supabase/client.ts` — browser only
   - `lib/supabase/admin.ts` — service role, server-side ONLY
 
+## Brand Voice
+Mom-and-pop, honest, plain-spoken — never corporate or salesy. "Honest" is the core brand word.
+Copy patterns: direct → friendly → specific. Never: "state-of-the-art", "synergy", "solutions provider."
+Tagline: "Honest work, fair prices, done right the first time." — the brand in one sentence.
+
 ## Failure Patterns
 - Adding articles as markdown files → silently ignored, content never shows
 - Using `/admin` cookie in `/portal` routes → silent 401s
