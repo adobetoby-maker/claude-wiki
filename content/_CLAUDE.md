@@ -89,4 +89,4 @@ Hooks: PostCompact (this file runs on compaction) + SessionStart
 Vault is Quartz-publishable. `git push` from `/Users/drive/claude-wiki/` triggers rebuild.
 Memory also synced to: `https://github.com/adobetoby-maker/toby-claude-memory`
 
-**Git push status (as of 2026-05-28):** BLOCKED — remote points to upstream `jackyzha0/quartz.git`. Commit `17a1671` (709 insertions) is local only. User must create fork or add own remote before pushing.
+**Git push status (as of 2026-05-28):** LIVE — fork at `adobetoby-maker/claude-wiki`. Auto-deploy: push to `v4` → GitHub Actions → `vercel --prod`. Live at https://claude-wiki-two.vercel.app. Secrets set: `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`.
